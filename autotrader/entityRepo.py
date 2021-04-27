@@ -9,3 +9,4 @@ def getQuote(symbol):
 
     print(res.status_code, res.content)
     return json.loads(res.content)
+    
