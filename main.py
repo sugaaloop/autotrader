@@ -1,22 +1,15 @@
-# Python 3 server example
-# from http.server import BaseHTTPRequestHandler, HTTPServer
-# import time
+# Autotrader
+import os
 
 import hug
+from dotenv import load_dotenv
 
-from autotrader import quoteCtrl as quote
-from autotrader import entityRepo
+from autotrader import app
 
-@hug.extend_api('/quote')
-def quote_api():
-    return [quote]
+load_dotenv()
 
-@hug.get('/thing')
-def thing():
-    print('thing')
-    return 'thing'
 
-@hug.get('/')
-def home():
-    print('home')
-    return 'home'
+@hug.extend_api()
+def init_app():
+    return [app]
+

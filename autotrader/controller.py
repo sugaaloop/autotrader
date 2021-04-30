@@ -1,7 +1,7 @@
 import hug
 
-from . import entityRepo
+from . import repository
 
 @hug.get('/{symbol}')
 def getQuote(symbol: hug.types.text):
-    return entityRepo.getQuote(symbol)
+    return repository.getQuote(symbol)

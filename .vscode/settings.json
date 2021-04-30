@@ -1,0 +1,10 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "C:\\Users\\R_Hen\\.virtualenvs\\autotrader-sYlnSEKo\\Scripts\\python.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "-command",
+        "Set-PsEnv;",
+        "powershell"
+    ]
+}
